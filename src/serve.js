@@ -4,6 +4,7 @@ const hbs = require("hbs");
 const { forecast } = require("./forecast-utils");
 
 const app = express();
+const port = process.env.PORT || 3000;
 
 app.set("views", path.join(__dirname, "../templates/views"));
 app.set("view engine", "hbs");
@@ -65,6 +66,6 @@ app.get("/help", (req, res) => {
   });
 });
 
-app.listen(3000, () => {
+app.listen(port, () => {
   console.log("Server is running in port 3000");
 });
