@@ -4,7 +4,8 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "start": "nodemon ./src/serve.js -e js,hbs",
+    "start": "node ./src/serve.js",
+    "livereload": "nodemon ./src/serve.js -e js,hbs",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
